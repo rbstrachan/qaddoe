@@ -28,7 +28,7 @@
     </header>
     <main>
         <div class="content">
-            <h1>Une application d'analyse<br>qualitative pour tous.</h1>
+            <h1 id="hero-title"></h1>
             <p>Les révélations cachées vous attendent. La question est <b><i>qu'allez-vous découvrir?</i></b></p>
             <div class="buttons">
                 <button class="demo"><a href="https://github.com/rbstrachan/rqda/releases"
@@ -43,6 +43,25 @@
             <img src="img/mainApplication.png" alt="Browser Screenshot">
         </div>
     </main>
+    <script>
+        const titles = [
+            "Puissant, convivial, gratuit.<br>C'est QADDOE.",
+            "Puissant, convivial, gratuit.<br>C'est QADDOE.",
+            "Puissant, convivial, gratuit.<br>C'est QADDOE.",
+            "Puissant, convivial, gratuit.<br>C'est QADDOE.",
+            "Puissant, convivial, gratuit.<br>C'est QADDOE.",
+            "Une application de recherche<br>qualitative pour tous.",
+            "Une application de recherche<br>qualitative pour tous.",
+            // "Découvrez des insights cachés<br>grace à votre partenaire de recherche.", <- TOO LONG
+            "Analyse qualitative<br>simplifiée pour vous.",
+            "Révélez les histoires cachées.<br>Donnez du sens à vos données.",
+            "L'analyse qualitative, simplifiée.",
+            "L'intelligence au service<br>de vos données qualitatives.",
+            // "Tissez des liens entre vos données."
+        ];
+
+        document.getElementById('hero-title').innerHTML = titles[Math.floor(Math.random() * titles.length)];
+    </script>
 </body>
 
 </html>
