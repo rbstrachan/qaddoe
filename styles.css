@@ -16,6 +16,10 @@ body {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    width: 130%;
+    height: 130%;
+    transform-origin: top left;
+    transform: scale(calc(1/1.3));
 }
 
 body::before {
@@ -28,7 +32,6 @@ body::before {
     background: url('img/starryBackgroundS.webp') no-repeat center center fixed;
     background-size: cover;
     opacity: 0.85;
-    /* Réduire l'opacité de l'image de fond */
     z-index: -1;
 }
 
